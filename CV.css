@@ -1,0 +1,157 @@
+style>
+    /* Estilos generales */
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      background-color: #D3C0CD;
+      color: #216869;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      font-weight: 700;
+      color: #3D3A4B;
+    }
+    
+    ul{
+      background-color: #D3C0CD;
+      color: #937666;
+    }
+
+    li {
+      color: #937666;
+      background-color: #D3C0CD;
+    }
+    
+    /* Estilos de la barra de navegación */
+    nav {
+      background-color: #3D3A4B;
+      color: #E3DFFF;
+      padding: 1rem;
+    }
+    
+    nav ul {
+      background-color: #3D3A4B;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    nav li {
+      background-color: #B19994;
+      margin: 0 1rem;
+    }
+    
+    nav a {
+      color: #DCE1DE;
+      text-decoration: none;
+      padding: 0.5rem;
+    }
+    
+    /* Estilos del encabezado y la foto de perfil */
+    header {
+      background-color: #D3C0CD;
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    header h1 {
+      background-color: #D3C0CD;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    /* Estilos de la sección de habilidades */
+    .skills {
+      background-color: #3D3A4B;
+      padding: 2rem;
+    }
+    
+    .skills h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .skills ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .skills li {
+      margin-bottom: 1rem;
+      width: 48%;
+    }
+    
+    .skills i {
+      margin-right: 0.5rem;
+      color: #3D3A4B;
+    }
+    
+    /* Estilos del pie de página */
+    footer {
+      background-color: #D3C0CD;
+      color: #E3DFFF;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    
+    footer a {
+      color: #D3C0CD;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    
+    /* Estilos personalizados */
+    .intro {
+      background-color: #D3C0CD
+;
+padding: 2rem;
+text-align: center;
+}
+.intro h2 {
+  background-color: #D3C0CD;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  background-color: #D3C0CD;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.intro a {
+  background-color: #3D3A4B;
+  color: #E3DFFF;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.intro a:hover {
+  background-color: #3D3A4B;
+  color: #E3DFFF;
+}
+</style>

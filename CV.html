@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículum Vitae</title>
+<link rel="stylesheet" type="text/css" href="CV.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#experiencia">Experiencia laboral</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#educacion">Formación académica</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+</ul>
+  </nav>
+  <header>
+    <img src="https://via.placeholder.com/150" alt="Foto de perfil">
+    <h1>Alejo Reynoso</h1>
+    <h2>Desarrollador Web</h2>
+  </header>
+<section id="inicio" class="intro">
+    <h2>Sobre mí</h2>
+    <p>Soy una persona social y trabajadora. Me encanta trabajar en equipo para lograr los objetivos de la empresa y hacerlos lo mejor posible. Siempre busco aprender y superarme, lo que me permitio destacar siempre. En resumen soy un profesional altamente dedicado a lo que hago.</p>
+    <a href="#">Descargar CV</a>
+  </section>
+  <section id="experiencia">
+    <h2>Experiencia laboral</h2>
+    <ul>
+      <li>
+        <h3>Desarrollador Web</h3>
+<p>Empresa IBM</p>
+        <p>Septiembre 2020 - Presente</p>
+        <ul>
+          <li>Desarrollo de aplicaciones web</li>
+          <li>Integración de APIs externas</li>
+          <li>Implementación de pruebas automatizadas</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Desarrollador Front-end</h3>
+        <p>Empresa Nintendo</p>
+        <p>Enero 2018 - Agosto 2020</p>
+        <ul>
+<li>Desarrollo de sitios web responsivos</li>
+          <li>Implementación de diseños a partir de prototipos</li>
+          <li>Optimización de rendimiento y velocidad</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+   <section id="habilidades">
+    <h2>Habilidades</h2>
+     <ul>
+      <li>
+      <p>Trabajo en equipo</p>
+        <ul>
+          <li>He colaborado con equipos interdisciplinarios en proyectos complejos, demostrando habilidades de liderazgo y capacidad para resolver conflictos y mantener la motivación del equipo.</li>
+        </ul>
+        <p>Habilidades informáticas</p>
+        <ul>
+          <li>Soy competente en el uso de software y herramientas informáticas, incluyendo programas de ofimática, software de gestión de proyectos y de análisis de datos, y estoy siempre dispuesto a aprender nuevas tecnologías.</li>
+        </ul>
+        <p>Pensamiento crítico</p>
+        <ul>
+          <li>Utilizo el pensamiento crítico de manera constante para evaluar situaciones complejas, tomar decisiones informadas y defender mis argumentos mediante datos y evidencia.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section id="educacion">
+    <h2>Formación académica</h2>
+    <ul>
+      <li>
+        <h3>Licenciatura en Informática</h3>
+        <p>Universidad Nacional</p>
+<p>2014 - 2018</p>
+      </li>
+      <li>
+        <h3>Cursos y certificaciones</h3>
+        <ul>
+          <li>Desarrollo web con HTML, CSS y JavaScript</li>
+          <li>Introducción a React</li>
+<div class="section">
+  <h2>Educación en exterior</h2>
+  <ul>
+    <li>
+      <h3>Bachelor's Degree in Computer Science</h3>
+      <p>University of Yale</p>
+      <p>Graduado en Mayo 2020</p>
+      <button id="boton1" onclick="mostrarInformacion1()">Más info</button>
+    <div id="informacion1" hidden>
+      <p>Estudiar en el extranjero fue una experiencia transformadora que tuvo un impacto significativo en mi aprendizaje de inglés. A través de mi inmersión en un ambiente angloparlante, logré desarrollar habilidades lingüísticas efectivas en un corto periodo de tiempo. Esta oportunidad me permitió superar las barreras del idioma que había enfrentado anteriormente y me proporcionó una sólida base para mi desarrollo académico y profesional.</p>
+    </div>
+    
+    <script>
+      function mostrarInformacion1() {
+        var boton = document.getElementById("boton1");
+        var informacion = document.getElementById("informacion1");
+        boton.hidden = true;
+        informacion.hidden = false;
+      }
+    </script>
+    </li>
+    <li>
+      <h3>Master's Degree in Information Technology</h3>
+      <p>University of Columbia</p>
+      <p>Graduado en Mayo 2022</p>
+      <button id="boton2" onclick="mostrarInformacion2()">Más info</button>
+    <div id="informacion2" hidden>
+      <p>Obtuve una beca para estudiar en Estados Unidos, lo que me permitió aprovechar una oportunidad única de aprendizaje y desarrollo académico. Durante mi estancia, mantuve un promedio casi excelente, lo que refleja mi compromiso y dedicación hacia mis estudios en el extranjero.</p>
+    </div>
+    
+    <script>
+      function mostrarInformacion2() {
+        var boton = document.getElementById("boton2");
+        var informacion = document.getElementById("informacion2");
+        boton.hidden = true;
+        informacion.hidden = false;
+      }
+      </script>
+    </li>
+  </ul>
+</div>
+<script>
+  // Obtener todos los botones expandibles
+  const expandBtns = document.querySelectorAll('.expand-btn');
+
+  // Iterar sobre los botones y agregar un evento de clic a cada uno
+  expandBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Obtener la información adicional del atributo data-info
+      const info = btn.dataset.info;
+      
+      // Crear un elemento p para mostrar la información adicional
+      const p = document.createElement('p');
+      p.textContent = info;
+      
+      // Insertar el elemento p después del botón
+      btn.parentNode.insertBefore(p, btn.nextSibling);
+      
+      // Ocultar el botón
+      btn.style.display = 'none';
+    });
+  });
+
+<button id="theme-toggle">Cambiar tema</button>
+
+
+  const themeToggle = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  themeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-theme");
+  });
+</script>
+<div class="social-icons">
+  <a href="https://www.facebook.com/miusuario" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://twitter.com/miusuario" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/miusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://www.instagram.com/miusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://github.com/miusuario" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+</body>
